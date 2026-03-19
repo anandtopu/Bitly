@@ -1,5 +1,8 @@
 import pytest
 from fastapi.testclient import TestClient
+import fakeredis
+from app.core import redis as app_redis
+app_redis.redis_client = fakeredis.FakeRedis(decode_responses=True)
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
