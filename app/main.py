@@ -10,6 +10,6 @@ try:
 except Exception as e:
     print(f"Warning: Could not create tables: {e}")
 
-app = FastAPI(title="Bit.ly URL Shortener")
+app = FastAPI(title="Briefly URL Shortener")
 
 app.include_router(api_router)

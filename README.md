@@ -1,4 +1,4 @@
-# Bit.ly URL Shortener Clone
+# Briefly URL Shortener
 
 A simple, fast, and scalable URL shortener service built with FastAPI and SQLAlchemy.
 
@@ -12,7 +12,7 @@ A simple, fast, and scalable URL shortener service built with FastAPI and SQLAlc
 ## Project Structure
 The application follows a standard, scalable REST API layout:
 ```text
-Bitly/
+Briefly/
 ├── app/
 │   ├── main.py              # FastAPI application instance
 │   ├── api/

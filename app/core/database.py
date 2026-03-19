@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://bitly_user:bitly_password@localhost:5432/bitly_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://briefly_user:briefly_password@localhost:5432/briefly_db")
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
